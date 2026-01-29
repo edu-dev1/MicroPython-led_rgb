@@ -1,10 +1,10 @@
 # MicroPython-led_rgb
 Led RGB.
-A simple library for LED RGB.
+A simple MicroPython library for LED RGB.
 
 ## Features
-Easy to use.
-Compatible with ESP32 and Raspberry.
+- Easy to use.
+- Compatible with ESP32 and Raspberry.
 
 ## Example of usage
 ```python
