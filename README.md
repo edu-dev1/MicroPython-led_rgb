@@ -1,5 +1,5 @@
 # MicroPython-led_rgb
-Led RGB.
+
 A simple MicroPython library for LED RGB.
 
 ## Features
