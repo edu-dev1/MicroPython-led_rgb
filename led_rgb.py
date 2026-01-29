@@ -80,6 +80,8 @@ class LedRGB:
             `r`: rango del 0-255 (int)
             `g`: rango del 0-255 (int)
             `b`: rango del 0-255 (int)'''
+        if any((color < 0 or color > 255) for color in [r, g, b]):
+            raise ValueError("Sólo rangos de color entre 0 a 255.")
         r_pwm, g_pwm, b_pwm = self.__get_analog_led()
         if self.__common_anode:
             r_pwm.duty_u16(65535 - int(r * 65535))
@@ -122,7 +124,6 @@ if __name__ == '__main__':
               'Red':(255, 0, 0), 'Maroon':(128, 0, 0), 'Yellow':(255, 255, 0), 'Olive':(128, 128, 0), 'Lime':(0, 255, 0),
               'Green':(0, 128, 0), 'Aqua':(0, 255, 255), 'Teal':(0, 128, 128), 'Blue':(0, 0, 255), 'Navy':(0, 0, 128),
               'Fuchsia':(255, 0, 255), 'Purple':(128, 0, 128)}
-
     try:
         while True:
             
