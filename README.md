@@ -10,7 +10,7 @@ A simple MicroPython library for LED RGB.
 ```python
 from led_rgb import LedRGB
 from time import sleep
-my_ledrgb = LedRGB(R=1, G=2, B=3, common_anode:bool=True)
+my_ledrgb = LedRGB(R=1, G=2, B=3, common_anode=True)
 
 my_ledrgb.red()
 sleep(1)
