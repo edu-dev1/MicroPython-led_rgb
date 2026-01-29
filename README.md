@@ -3,8 +3,8 @@ Led RGB.
 A simple library for LED RGB.
 
 ## Features
--Easy to use.
--Compatible with ESP32 and Raspberry.
+Easy to use.
+Compatible with ESP32 and Raspberry.
 
 ## Example of usage
 ```python
@@ -19,5 +19,5 @@ sleep(1)
 my_ledrgb.blue()
 sleep(1)
 
-my_ledrgb.ser_color(r=255, g=255, b=0)#yellow
+my_ledrgb.set_color(r=255, g=255, b=0)#yellow
 sleep(1)
