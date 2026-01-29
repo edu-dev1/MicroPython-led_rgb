@@ -1,4 +1,4 @@
-'''Librería el para led rgb'''
+'''Librería para el led rgb'''
 from machine import Pin, PWM
 
 class LedRGB:
