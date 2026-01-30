@@ -146,5 +146,4 @@ if __name__ == '__main__':
             sleep_ms(500)
 
     except KeyboardInterrupt:
-
         led.rgb_off()
