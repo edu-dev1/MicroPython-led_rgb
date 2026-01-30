@@ -9,7 +9,6 @@ class LedRGB:
         Los argumentos son los pines de las respectivas salidas del LED `R`, `G`, `B`.\n
         El argumento `common_anode` indica si el led es ánodo común (True) o cátodo común (False).\n
         Funciones extra para los objetos LedRGB:
-        >>> \tall_leds_rgb_on()
         >>> \tall_leds_rgb_off()'''
 
         LedRGB.__led_rgb_counter += 1
@@ -147,4 +146,5 @@ if __name__ == '__main__':
             sleep_ms(500)
 
     except KeyboardInterrupt:
+
         led.rgb_off()
