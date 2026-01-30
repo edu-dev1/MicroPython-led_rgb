@@ -6,7 +6,7 @@ A simple MicroPython library for LED RGB.
 - Easy to use.
 - Compatible with ESP32 and Raspberry.
 
-## Example of usage
+## Example of use
 ```python
 from led_rgb import LedRGB
 from time import sleep
